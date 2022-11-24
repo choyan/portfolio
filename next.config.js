@@ -2,6 +2,9 @@ module.exports = {
   future: {
     strictPostcssConfiguration: true,
   },
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
   async headers() {
     return [
