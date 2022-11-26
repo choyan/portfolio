@@ -1,4 +1,18 @@
+const isGithubActions = process.env.GITHUB_ACTIONS || false
+const repo = 'choyan.github.io/portfolio'
+const assetPrefix = `/${repo}/`
+const basePath = `/${repo}`
+
+if (isGithubActions) {
+  // trim off `<owner>/`
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  assetPrefix = `/${repo}/`
+  basePath = `/${repo}`
+}
+
 module.exports = {
+  assetPrefix: assetPrefix,
+  basePath: basePath,
   future: {
     strictPostcssConfiguration: true,
   },
