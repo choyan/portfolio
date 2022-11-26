@@ -23,7 +23,7 @@ interface ContainerProps {
 export default function Container({ children, ...customMeta }: ContainerProps) {
   const router = useRouter();
   const meta = {
-    title: "Lasha Kakabadze – React.js Developer",
+    title: "Zahidul Hossain – Front-end Engineer",
     description: `React developer, JavaScript enthusiast, and freelancer.`,
     image: "https://www.adrinlol.com/assets/png/Thumbnail.png",
     type: "website",

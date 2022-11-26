@@ -22,7 +22,7 @@ export default function Home() {
           <p>
             I have seven years of experience in developing,
             and managing websites, and applications for various companies.
-            Currently not looking for any new role.
+            Open for any kind of consultency.
              –&nbsp;
             {" while you're here "}
             <Link href="/about">

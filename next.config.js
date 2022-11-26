@@ -3,7 +3,8 @@ module.exports = {
     strictPostcssConfiguration: true,
   },
   images: {
-    unoptimized: true,
+    loader: 'imgix',
+    path: 'choyan.imgix.net'
   },
   reactStrictMode: true,
   async headers() {
