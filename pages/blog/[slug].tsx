@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { RoundImage } from "pages";
-import { formatDate, convertToSlug } from "lib/helpers";
+// import { RoundImage } from "pages";
+// import { formatDate, convertToSlug } from "lib/helpers";
 // import { mediumUserUrl } from "pages/api/medium";
 import { devices } from "lib/displayDevice";
 import { PostsProps } from "lib/types";

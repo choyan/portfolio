@@ -17,7 +17,7 @@ export const TestimonialList = () => {
 
   return (
     <Container>
-      {data?.map((item: StringProps, id: number) => (
+      {/* {data?.map((item: StringProps, id: number) => (
         <Item isLeft={id % 2 !== 0} key={id}>
           {item.picture && (
             <Image
@@ -45,7 +45,7 @@ export const TestimonialList = () => {
             </Flex>
           )}
         </Item>
-      ))}
+      ))} */}
     </Container>
   );
 };

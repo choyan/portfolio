@@ -10,7 +10,7 @@ import { devices } from "lib/displayDevice";
 
 import { Flex } from "components/Layout/Container/styles";
 
-import ProfilePicture from "public/assets/png/choyan.jpeg";
+import ProfilePicture from "/public/assets/png/choyan.jpeg";
 
 export default function Home() {
   return (
@@ -26,15 +26,15 @@ export default function Home() {
              –&nbsp;
             {" while you're here "}
             <Link href="/about">
-              <a>learn more about me.</a>
+              learn more about me
             </Link>
           </p>
         </ContentWrapper>
         <RoundImage
           src={ProfilePicture}
           alt="Picture of Lasha"
-          width="150px"
-          height="150px"
+          width={150}
+          height={150}
         />
       </HeroFlex>
       {/* <Projects /> */}

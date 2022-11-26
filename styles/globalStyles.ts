@@ -1,5 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import { devices } from "lib/displayDevice";
+import { Montserrat_Alternates } from '@next/font/google'
+const montserrat = Montserrat_Alternates({
+  weight: '400'
+})
 
 export const GlobalStyle = createGlobalStyle`
     body {
@@ -8,7 +12,10 @@ export const GlobalStyle = createGlobalStyle`
       border: 0;
       outline: 0;
       overflow-x: hidden;
-      font-family: 'Montserrat Alternates Regular', Roboto, Arial, sans-serif;
+      font-family: ${montserrat.style.fontFamily};
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
     }
 
     * {
@@ -18,7 +25,6 @@ export const GlobalStyle = createGlobalStyle`
 
     html {
         scroll-behavior: smooth;
-
     }
 
     #__next {
@@ -44,9 +50,9 @@ export const GlobalStyle = createGlobalStyle`
     input,
     textarea {
       border: 0;
-      transition: all 0.3s ease-in-out;  
+      transition: all 0.3s ease-in-out;
       outline: none;
-      width: 100%;  
+      width: 100%;
       padding: 1rem 1.25rem;
     }
 
@@ -59,34 +65,34 @@ export const GlobalStyle = createGlobalStyle`
       letter-spacing: 0.025rem;
       margin-bottom: 1rem;
       font-size: 2.8125rem;
-      
+
       @media ${devices.tabletL} {
-        font-size: 2.375rem;      
+        font-size: 2.375rem;
       }
 
       @media ${devices.mobileL} {
-        font-size: 1.75rem;      
+        font-size: 1.75rem;
       }
     }
 
     h3 {
       margin-bottom: 1rem;
       font-weight: 600;
-      font-size: 2rem;   
+      font-size: 2rem;
 
       @media ${devices.tabletL} {
-        font-size: 1.75rem;      
+        font-size: 1.75rem;
       }
 
       @media ${devices.mobileL} {
-        font-size: 1.25rem;      
+        font-size: 1.25rem;
       }
     }
 
     h4 {
       margin-bottom: 1rem;
       font-weight: 600;
-      font-size: 1.25rem;      
+      font-size: 1.25rem;
     }
 
     p, li {

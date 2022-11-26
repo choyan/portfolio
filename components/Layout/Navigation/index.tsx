@@ -7,7 +7,7 @@ export const Navigation = ({ href, text }: StringProps) => {
   const router = useRouter();
 
   return (
-    <StyledLink href={href as string}>
+    <StyledLink href={href as string} legacyBehavior>
       <a
         className={router.pathname == href ? "active" : ""}
         rel="noopener noreferrer"

@@ -1,25 +1,35 @@
-// const isGithubActions = process.env.GITHUB_ACTIONS || false
+const isGithubActions = process.env.GITHUB_ACTIONS || false
 
-// let assetPrefix = ''
-// let basePath = ''
+let assetPrefix = ''
+let basePath = '/'
 
-// if (isGithubActions) {
-//   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-//   assetPrefix = `/${repo}/`
-//   basePath = `/${repo}`
-// }
+if (isGithubActions) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  assetPrefix = `/${repo}/`
+  basePath = `/${repo}`
+}
 
 module.exports = {
-  assetPrefix: './',
-  // basePath: basePath,
+  // assetPrefix,
+  // basePath,
   compiler: {
     styledComponents: true,
     removeConsole: true,
   },
   images: {
-    loader: 'akamai',
-    path: ''
-    // unoptimized: true
+    // loader: 'akamai',
+    // path: ''
+    unoptimized: true
+  },
+  experimental: {
+    fontLoaders: [
+      {
+        loader: '@next/font/google',
+        options: {
+          subsets: ['latin']
+        }
+      }
+    ],
   },
   // images: {
   //   loader: 'imgix',
