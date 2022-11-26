@@ -10,14 +10,16 @@
 // }
 
 module.exports = {
-  // assetPrefix: assetPrefix,
+  assetPrefix: './',
   // basePath: basePath,
   compiler: {
     styledComponents: true,
     removeConsole: true,
   },
   images: {
-    unoptimized: true
+    loader: 'akamai',
+    path: ''
+    // unoptimized: true
   },
   // images: {
   //   loader: 'imgix',
