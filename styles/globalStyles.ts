@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import { devices } from "lib/displayDevice";
 import { Montserrat_Alternates } from '@next/font/google'
+
 const montserrat = Montserrat_Alternates({
   weight: '400'
 })

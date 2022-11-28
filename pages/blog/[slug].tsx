@@ -8,7 +8,7 @@ import { PostsProps } from "lib/types";
 import { Flex } from "components/Layout/Container/styles";
 import Container from "components/Layout/Container";
 
-import ProfilePicture from "public/assets/png/Lasha.png";
+// import ProfilePicture from "public/assets/png/Lasha.png";
 
 interface BlogProps {
   filteredPost: PostsProps;

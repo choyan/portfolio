@@ -7,10 +7,7 @@ import { Timeline } from "components/Timeline";
 import Container from "components/Layout/Container";
 import { StringProps } from "lib/types";
 import { devices } from "lib/displayDevice";
-
 import { Flex } from "components/Layout/Container/styles";
-
-import ProfilePicture from "/public/assets/png/choyan.jpeg";
 
 export default function Home() {
   return (
@@ -31,7 +28,7 @@ export default function Home() {
           </p>
         </ContentWrapper>
         <RoundImage
-          src={ProfilePicture}
+          src='/assets/png/choyan.jpeg'
           alt="Picture of Lasha"
           width={150}
           height={150}

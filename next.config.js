@@ -10,15 +10,13 @@
 // }
 
 module.exports = {
-  // assetPrefix,
-  // basePath,
+  // assetPrefix: './',
+  basePath: '/portfolio',
   compiler: {
     styledComponents: true,
     removeConsole: true,
   },
   images: {
-    // loader: 'akamai',
-    // path: ''
     unoptimized: true
   },
   experimental: {
