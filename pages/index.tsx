@@ -8,6 +8,7 @@ import Container from "components/Layout/Container";
 import { StringProps } from "lib/types";
 import { devices } from "lib/displayDevice";
 import { Flex } from "components/Layout/Container/styles";
+// import ProfileImage from '/assets/png/choyan.jpeg'
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
           </p>
         </ContentWrapper>
         <RoundImage
-          src='/assets/png/choyan.jpeg'
+          src='/portfolio/assets/png/choyan.jpeg'
           alt="Picture of Lasha"
           width={150}
           height={150}

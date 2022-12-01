@@ -10,7 +10,7 @@
 // }
 
 module.exports = {
-  assetPrefix: '/portfolio',
+  // assetPrefix: '',
   basePath: '/portfolio',
   compiler: {
     styledComponents: true,
